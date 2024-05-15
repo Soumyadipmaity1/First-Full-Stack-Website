@@ -4,8 +4,11 @@ import axios from 'axios'
 function App() {
   const [jokes, setJokes] = useState([])
   useEffect(() => {
-    axios.get('http://localhost:3000/jokes').then(response => {
+    axios.get('/api/jokes').then(response => {
       setJokes(response.data)
+    })
+    .catch(error => {
+      console.log(error) 
     })
   },) 
   return (
