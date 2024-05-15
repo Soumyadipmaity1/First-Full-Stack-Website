@@ -1,9 +1,9 @@
 import express from "express";
 const app = express();
 app.use(express.static('dist'));
-app.get("/", (req, res) => {
-    res.send("Hello World!");
-    });
+// app.get("/", (req, res) => {
+//     res.send("Hello World!");
+//     });
 
     //get a list of 5 jokes 
 
